@@ -1,0 +1,68 @@
+% !Mode:: "TeX:UTF-8"
+% 本文件用来设置正文的格式
+
+
+%%%%%%%%%%%%%%%%% Fonts Definition and Basics %%%%%%%%%%%%%%%%%
+
+
+\setCJKmainfont{宋体}                   % 设置正文为宋体
+\setmainfont{Times New Roman}           % 设置英文字体为新罗马
+
+\setCJKfamilyfont{song}{SimSun}         % 微软自带宋体
+\setCJKfamilyfont{fs}{FangSong}         % 微软自带仿宋体
+\setCJKfamilyfont{kai}{KaiTi}           % 微软自带楷体
+\setCJKfamilyfont{yh}{Microsoft YaHei}  % 微软自带雅黑
+\setCJKfamilyfont{hei}{SimHei}          % 微软自带黑体
+\setCJKfamilyfont{li}{LiSu}             % 微软自带隶书
+\setCJKfamilyfont{yy}{YouYuan}          % 微软自带幼圆
+
+\newcommand{\song}{\CJKfamily{song}}    % 宋体
+\newcommand{\fs}{\CJKfamily{fs}}        % 仿宋体
+\newcommand{\kai}{\CJKfamily{kai}}      % 楷体
+\newcommand{\yh}{\CJKfamily{yh}}        % 微软雅黑
+\newcommand{\hei}{\CJKfamily{hei}}      % 黑体
+\newcommand{\li}{\CJKfamily{li}}        % 隶书
+\newcommand{\yy}{\CJKfamily{yy}}        % 幼圆
+\newcommand{\chuhao}{\fontsize{28pt}{28pt}\selectfont}       % 初号, 单倍行距
+\newcommand{\yihao}{\fontsize{26pt}{26pt}\selectfont}       % 一号, 单倍行距
+\newcommand{\xiaoyi}{\fontsize{24pt}{24pt}\selectfont}      % 小一, 单倍行距
+\newcommand{\erhao}{\fontsize{22pt}{1.25\baselineskip}\selectfont}       % 二号, 1.25倍行距
+\newcommand{\xiaoer}{\fontsize{18pt}{18pt}\selectfont}      % 小二, 单倍行距
+\newcommand{\sanhao}{\fontsize{16pt}{16pt}\selectfont}      % 三号, 单倍行距
+\newcommand{\xiaosan}{\fontsize{15pt}{15pt}\selectfont}     % 小三, 单倍行距
+\newcommand{\sihao}{\fontsize{14pt}{14pt}\selectfont}       % 四号, 单倍行距
+\newcommand{\xiaosi}{\fontsize{12pt}{12pt}\selectfont}      % 小四, 单倍行距
+\newcommand{\wuhao}{\fontsize{10.5pt}{10.5pt}\selectfont}   % 五号, 单倍行距
+\newcommand{\xiaowu}{\fontsize{9pt}{9pt}\selectfont}        % 小五, 单倍行距
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}     % 定义绿色
+\definecolor{mauve}{rgb}{0.58,0,0.82}   % 定义紫色
+\lstset
+{
+    language=C++,                       % 这条命令可以让LaTeX排版时将C++键字突出显示
+    breaklines,                         % 这条命令可以让LaTeX自动将长的代码行换行排版
+    extendedchars=false,                % 这条命令可以解决代码跨页时，章节标题，页眉等汉字不显示的问题
+    columns=flexible,                   % 这条命令可以使得代码复制不出现多余的空格
+    showstringspaces=false,             % 这条命令可以使得代码中间的字符串不出现多余的空格
+    numbers=left,                       % 这条命令可以让代码行数显示在左边
+    stepnumber=2,                       % 这条命令可以让代码行数间隔为2
+    numbersep=10pt,                     % 这条命令可以控制代码行数到边框的距离
+    backgroundcolor=\color{white},      % 这条命令可以设置背景颜色
+    showspaces=false,                   % 这条命令可以控制代码中间出现空格符号
+    showtabs=false,                     % 这条命令可以控制代码中间不出现制表符
+    keywordstyle=\color{blue},          % 这条命令可以设置代码关键词为蓝色
+    commentstyle=\color{dkgreen},       % 这条命令可以控制代码注释为绿色
+    stringstyle=\color{mauve},          % 这条命令可以控制代码中间的字符串为紫色
+    identifierstyle=\color{orange},     % 这条命令可以控制代码中间的标识符为橙色
+    frame=single,                       % 这条命令可以控制代码的边框类型
+    rulecolor=\color{black},            % 这条命令可以控制代码的边框颜色
+    captionpos=b,                       % 这条命令可以控制代码的标题在下方
+    morekeywords={main},                % 这条命令可以设置代码的关键词
+    xleftmargin=2em,                    % 这条命令可以控制代码的边框到文本左边界的距离
+    xrightmargin=2em,                   % 这条命令可以控制代码的边框到文本右边界的距离
+    aboveskip=1em,                      % 这条命令可以控制代码的边框到文本上边界的距离
+    belowskip=1em,                      % 这条命令可以控制代码的边框到文本下边界的距离
+} 
+
+

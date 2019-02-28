@@ -1,0 +1,61 @@
+%!TEX program = xelatex
+%上面的命令必须得有以指定编译器
+
+\documentclass{article}       % 指明文章类型为报告
+\input{setup/package.tex}           % 导入包
+\input{setup/format.tex}            % 导入格式设置
+
+
+\author{林奇峰}                     % 设置作者
+\title{实验报告}                    % 设置标题
+
+
+\begin{document}                    % document 内部的代码为文本的内容
+
+\maketitle
+
+\section{第一小节}
+    展示文本
+
+\section{第二小节}
+    展示表格
+    \begin{table}[h]                % h 使得表格紧靠在文字下方
+        \centering                  % 使表格居中
+        \begin{tabular}{|c|c|c|c|}  % c 使得表格里面的内容居中， | 给表格画竖线
+            \hline                  % 给表格画横线
+            a & b & c & d\\         % & 分隔表格列
+            \hline
+            e & f & g & h\\
+            \hline
+        \end{tabular}
+        \caption{表格展示}
+    \end{table}
+
+\section{第三小节}
+    展示插图
+    \begin{figure}[h]               % h 使得插图紧靠在文字下方
+        \centering
+        \includegraphics[width=2.5in]{google.pdf}
+        \caption{Google 插图}       % caption 为标题
+    \end{figure}
+
+\section{第四小节}
+    展示无序枚举
+    \begin{itemize}
+        \item a
+        \item b
+        \item c
+    \end{itemize}
+
+    展示有序枚举
+    \begin{enumerate}
+        \item 1
+        \item 2
+        \item 3
+    \end{enumerate}
+
+\section{插入代码}
+    展示插入代码
+    \lstinputlisting[caption=hello\_world.c]{codes/hello_world.c} % test.c 为代码的源文件
+ 
+\end{document}

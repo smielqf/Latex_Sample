@@ -1,0 +1,30 @@
+% !Mode:: "TeX:UTF-8"
+% 本文件用来引入正文编译需要的包
+
+
+\usepackage{xeCJK}                      % 使用中文包
+\usepackage{fontspec}                   % 设置英文字体   
+
+\usepackage{titlesec}                   % 控制标题的宏包
+\usepackage{float}                      % 支持环境浮空
+\usepackage{graphicx}                   % 支持插图处理
+\usepackage{subfigure}                  % 支持子图
+\graphicspath{{figures/}}               % 设置所有的.eps/.pdf图片文件在figures子目录下
+
+
+\usepackage{xcolor}                     % 提供颜色支持
+\usepackage{listings}                   % 支持插入代码
+
+\usepackage
+[a4paper,
+text={146.4true mm,239.2 true mm},
+top= 26.2true mm,
+left=31.8 true mm,
+head=6true mm,
+headsep=6.5true mm,
+foot=16.5true mm]
+{geometry}                              % 设置文本的边距
+
+
+\usepackage[squaren]{SIunits}           % 支持版面尺寸设置，支持国际标准单位
+\usepackage{indentfirst}                % 首行缩进宏包
